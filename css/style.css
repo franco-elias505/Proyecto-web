@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.top-bar {
+    background-color: #4dc26b;
+    color: white;
+    padding: 10px 0;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    gap: 25px;
+    font-size: 13px;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-info .icon {
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.social-icons img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+.main-header {
+    background-color: white;
+    padding: 25px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.main-nav {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    padding: 12px 24px;
+    border-radius: 25px;
+}
+
+.nav-link:hover {
+    background-color: #4dc26b;
+    color: white;
+}
+
+.nav-link.active {
+    background-color: #4dc26b;
+    color: white;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.search-btn img {
+    width: 22px;
+    height: 22px;
+}
+
+.search-btn:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .top-bar-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+}
