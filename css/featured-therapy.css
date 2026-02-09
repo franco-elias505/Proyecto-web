@@ -1,0 +1,97 @@
+.featured-therapy {
+  position: relative;
+  background-image: url('../img/violence.jpg');
+  background-size: cover;
+  background-position: center;
+  min-width: 1264px;
+  width: 1264px;
+  height: 334px;
+  display: flex;
+  align-items: center;
+}
+.featured-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48,48,48,0.41);
+  z-index: 1;
+}
+.featured-container{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.featured-content {
+    max-width: 750px;
+    margin-left: 60px;
+    flex-grow: 2;
+}
+.featured-content h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: Bold;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+.featured-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.featured-btn{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: center;
+    max-width: 349px;
+    margin: auto;
+    padding: 25px;
+    margin-top: 20px;
+    gap:15px;
+}
+.testimonial-btn{
+    font-family: 'Raleway', sans-serif;
+    height: 50px;
+    width: 349px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4dc26b;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0);
+}
+.consultation-btn{
+    font-family: 'Raleway', sans-serif;
+    height: 50px;
+    width: 349px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.testimonial-btn:hover{
+   background-color: #3cb55b;
+    color: white;
+}
+    
+.consultation-btn:hover{
+    background-color: rgba(255, 255, 255, 0.8);;
+    color: #333;
+}
